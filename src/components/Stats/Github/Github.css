@@ -23,6 +23,68 @@
     background-color: var(--black2);
 }
 
+.tablePublicInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 15px;
+}
+
+.tablePublicInfo .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 15px;
+}
+
+.tablePublicInfo .row .rowInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 15px;
+}
+
+.rowInfo span {
+    font-weight: lighter;
+}
+
 .Github .title span {
     background-color: var(--black2);
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--black);
+}
+
+
+@media (max-width: 768px) {
+    .title span {
+        font-size: 20px;
+    }
+    .Github {
+        width: 375px;
+    }
+    .tablePublicInfo .row .rowInfo span{
+        font-size: 20px;
+    }
 }

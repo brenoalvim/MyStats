@@ -16,11 +16,15 @@ function Header(props) {
     return (
         <div className="Header">
             <div class="input-group">
-                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder={props.placeholder} />
+                <input list="list-Users" type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder={props.placeholder} />
                 <button type="button" class="btn btn-outline-secondary" onClick={getName}>
                     <i class="fas fa-search"></i>
                 </button>
             </div>
+            <datalist id="list-Users">
+                <option value="brenoalvim" />
+                <option value="matthew-sbrito" />
+            </datalist>
         </div>
     );
 }

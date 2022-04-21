@@ -14,7 +14,7 @@ function Head(props) {
             </div>
             <div className="userName">
                 <span>
-                    <a href={`https://github.com/` + props.stats.login} target="_blank">
+                    <a href={`https://github.com/` + props.stats.login} target="_blank" rel='noreferrer'>
                         {props.stats.login}
                     </a>
                 </span>
