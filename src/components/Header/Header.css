@@ -8,5 +8,9 @@
 }
 
 .Header div {
-    width: 375px;
+    width: 320px;
+}
+
+.Header i {
+    background-color: rgba(0, 0, 0, 0);
 }
