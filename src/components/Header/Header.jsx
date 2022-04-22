@@ -1,7 +1,7 @@
 import './Header.css';
 
 function Header(props) {
-    
+
     async function getStatsGitHub(username) {
         let response = await fetch(`https://api.github.com/users/${username}`);
         let responseJson = await response.json();
@@ -24,6 +24,12 @@ function Header(props) {
             <datalist id="list-Users">
                 <option value="brenoalvim" />
                 <option value="matthew-sbrito" />
+                <option value="viniciochavess" />
+                <option value="ericqueirozc" />
+                <option value="torvalds" />
+                <option value="filipedeschamps" />
+                <option value="fabiohora" />
+                <option value="nynonet" />
             </datalist>
         </div>
     );
