@@ -5,16 +5,16 @@ function Head(props) {
     return (
         <div className="Head" >
             <div className="imageUser">
-                <img src={props.stats.avatar_url} alt="" />
+                <img src={props.stats.avatar_url} title="User profile picture" alt="User profile picture" />
             </div>
             <div className="name">
-                <span>
+                <span title={props.stats.name}>
                     {props.stats.name}
                 </span>
             </div>
             <div className="userName">
-                <span>
-                    <a href={`https://github.com/` + props.stats.login} target="_blank" rel='noreferrer'>
+                <span title='Access user Github profile'>
+                    <a href={`https://github.com/` + props.stats.login} target="_blank" rel="noopener noreferrer">
                         {props.stats.login}
                     </a>
                 </span>

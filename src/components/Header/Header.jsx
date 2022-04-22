@@ -17,7 +17,7 @@ function Header(props) {
         <div className="Header">
             <div class="input-group">
                 <input list="list-Users" type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder={props.placeholder} />
-                <button type="button" class="btn btn-outline-secondary" onClick={getName}>
+                <button title='search user' type="button" class="btn btn-outline-secondary" onClick={getName}>
                     <i class="fas fa-search"></i>
                 </button>
             </div>

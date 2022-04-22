@@ -13,10 +13,10 @@ function Github(props) {
             <div className="tablePublicInfo">
                 <div className="row">
                     <div className="rowInfo">
-                        <span>
+                        <span title='Location'>
                             Location
                         </span>
-                        <span>
+                        <span title={props.stats.location}>
                             <strong>
                                 {props.stats.location}
                             </strong>
@@ -27,10 +27,10 @@ function Github(props) {
             <div className="tablePublicInfo">
                 <div className="row">
                     <div className="rowInfo">
-                        <span>
+                        <span title='Company'>
                             Company
                         </span>
-                        <span>
+                        <span title={props.stats.company}>
                             <strong>
                                 {props.stats.company}
                             </strong>
@@ -41,10 +41,10 @@ function Github(props) {
             <div className="tablePublicInfo">
                 <div className="row">
                     <div className="rowInfo">
-                        <span>
+                        <span title='Followers'>
                             Followers
                         </span>
-                        <span>
+                        <span title={props.stats.followers}>
                             <strong>
                                 {props.stats.followers}
                             </strong>
@@ -55,10 +55,10 @@ function Github(props) {
             <div className="tablePublicInfo">
                 <div className="row">
                     <div className="rowInfo">
-                        <span>
+                        <span title='Following'>
                             Following
                         </span>
-                        <span>
+                        <span title={props.stats.following}>
                             <strong>
                                 {props.stats.following}
                             </strong>
@@ -69,10 +69,10 @@ function Github(props) {
             <div className="tablePublicInfo">
                 <div className="row">
                     <div className="rowInfo">
-                        <span>
+                        <span title='Public Repositories'>
                             Public Repositories
                         </span>
-                        <span>
+                        <span title={props.stats.public_repos}>
                             <strong>
                                 {props.stats.public_repos}
                             </strong>
