@@ -5,14 +5,14 @@ function Header(props) {
     async function getStatsGitHub(username) {
         let response = await fetch(`https://api.github.com/users/${username}`);
         let responseJson = await response.json();
-        document.querySelector(".form-control").value = ``;
         props.getStats(responseJson);
+        document.querySelector(".form-control").value = ``;
+        sessionStorage.setItem('username', document.querySelector(".form-control").value);
     }
 
     function getName() {
         getStatsGitHub(document.querySelector(".form-control").value);
     }
-
     return (
         <div className="Header">
             <div class="input-group">
@@ -30,6 +30,7 @@ function Header(props) {
                 <option value="filipedeschamps" />
                 <option value="fabiohora" />
                 <option value="nynonet" />
+                <option value="rafaballerini" />
             </datalist>
         </div>
     );
