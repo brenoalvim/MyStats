@@ -5,7 +5,7 @@ function Header(props) {
     async function getStatsGitHub(username) {
         let response = await fetch(`https://api.github.com/users/${username}`);
         let responseJson = await response.json();
-        console.log(responseJson);
+        document.querySelector(".form-control").value = ``;
         props.getStats(responseJson);
     }
 
