@@ -18,7 +18,7 @@ function Stats(props) {
             <div className='StatsAlert'>
                 <div className="spanAlert">
                     <div class="alert alert-danger" role="alert">
-                        Please enter the username in the input above
+                        {props.text}
                     </div>
                 </div>
             </div>

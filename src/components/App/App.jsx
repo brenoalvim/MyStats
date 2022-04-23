@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App" >
       <Header getStats={setStats} placeholder="GitHub Username" />
-      <Stats stats={stats} />
+      <Stats stats={stats} text="Please enter the username in the input above" />
       <Footer />
     </div>
   );
