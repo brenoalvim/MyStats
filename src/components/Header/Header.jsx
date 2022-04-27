@@ -19,6 +19,10 @@ function Header(props) {
         let response = await fetch(`https://api.github.com/users/${username}`);
         let responseJson = await response.json();
         props.getStats(responseJson);
+        saveUsername();
+    }
+
+    function saveUsername() {
         let value = document.querySelector(".form-control").value;
         window.sessionStorage.setItem("username", value);
     }
