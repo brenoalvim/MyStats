@@ -19,6 +19,7 @@ function Head(props) {
                     </a>
                 </span>
             </div>
+            <img src={`https://visitor-badge.glitch.me/badge?page_id==${props.stats.login}.visitor-badge`} alt="" />
         </div>
     );
 }
