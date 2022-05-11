@@ -18,7 +18,7 @@ function Outsourced(props) {
                 title="Current Streak"
                 alt="Current Streak" />
 
-            <img src={`https://github-readme-stats.vercel.app/api/top-langs?username=${props.stats.login}&show_icons=true&locale=en&layout=compact&hide_border=true&theme=react&langs_count=8`}
+            <img src={`https://github-readme-stats.vercel.app/api/top-langs?username=${props.stats.login}&show_icons=true&locale=en&layout=compact&hide_border=true&theme=react&langs_count=10`}
                 title="Most Used Languages"
                 alt="Most Used Languages" />
 
