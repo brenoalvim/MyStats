@@ -19,7 +19,7 @@ function Head(props) {
                     </a>
                 </span>
             </div>
-            <img src={`https://img.shields.io/github/followers/${props.stats.login}?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917`} alt="" />
+            <img src={`https://visitor-badge.glitch.me/badge?page_id==${props.stats.login}.visitor-badge`} alt="" />
         </div>
     );
 }
