@@ -38,11 +38,21 @@ function Header(props) {
     return (
         <div className="Header">
             <div class="input-group">
-                <input list="list-Users" type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder={props.placeholder} />
-                <button title='search user' type="button" class="btn btn-outline-secondary" onClick={getName}>
+                <input list="list-Users"
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with segmented dropdown button"
+                    placeholder={props.placeholder} />
+                <button title='search user'
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    onClick={getName}>
                     <i class="fas fa-search"></i>
                 </button>
-                <button title='search user' type="button" class="btn btn-outline-secondary" onClick={removeUser}>
+                <button title='search user'
+                    type="button"
+                    class="btn btn-outline-secondary"
+                    onClick={removeUser}>
                     <i class="fa-solid fa-delete-left"></i>
                 </button>
             </div>

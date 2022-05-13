@@ -12,9 +12,16 @@ function App() {
 
   return (
     <div className="App" >
-      <Header getStats={setStats} placeholder="GitHub Username" />
-      <Stats stats={stats} text="Please enter the username in the input above" />
-      <Footer />
+      <Header
+        getStats={setStats}
+        placeholder="GitHub Username" />
+      <Stats
+        stats={stats}
+        text="Please enter the username in the input above" />
+      <Footer
+        developer="Breno Alvim"
+        social="brenoalvim"
+        email="brenoalvim.dev@gmail.com" />
     </div>
   );
 }
