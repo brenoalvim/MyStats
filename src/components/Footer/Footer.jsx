@@ -22,7 +22,7 @@ function Footer(props) {
                 <i class="fa-solid fa-envelope"></i>
             </a>
             <div className="hr"></div>
-            <img src={`https://readme-typing-svg.herokuapp.com?font=Fira+Code&center=true&vCenter=true&width=375&lines=Developed+by%3A+Breno+Alvim.`}
+            <img src={props.linkFont}
                 title={`Developed by: ${props.developer}`}
                 alt={`Developed by: ${props.developer}`} />
         </div>

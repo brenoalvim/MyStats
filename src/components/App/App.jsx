@@ -21,7 +21,8 @@ function App() {
       <Footer
         developer="Breno Alvim"
         social="brenoalvim"
-        email="brenoalvim.dev@gmail.com" />
+        email="brenoalvim.dev@gmail.com"
+        linkFont={`https://readme-typing-svg.herokuapp.com?font=Fira+Code&center=true&vCenter=true&width=375&lines=Developed+by%3A+Breno+Alvim.`} />
     </div>
   );
 }
