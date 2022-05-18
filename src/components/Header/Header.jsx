@@ -16,9 +16,10 @@ function Header(props) {
     }, []);
 
     async function getStatsGitHub(username) {
-        let response = await fetch(`https://api.github.com/users/${username}`);
-        let responseJson = await response.json();
-        props.getStats(responseJson);
+        let response = await fetch(`https://api.github.com/users/${username}`)
+            .then(response => response.json())
+            .catch(error => console.log(error));
+        props.getStats(response);
         saveUsername();
     }
 
@@ -57,15 +58,33 @@ function Header(props) {
                 </button>
             </div>
             <datalist id="list-Users">
-                <option value="brenoalvim" />
-                <option value="matthew-sbrito" />
-                <option value="viniciochavess" />
-                <option value="ericqueirozc" />
-                <option value="torvalds" />
-                <option value="filipedeschamps" />
-                <option value="fabiohora" />
-                <option value="nynonet" />
-                <option value="rafaballerini" />
+                <option value="brenoalvim">
+                    Breno Alvim
+                </option>
+                <option value="matthew-sbrito" >
+                    Matheus Brito
+                </option>
+                <option value="viniciochavess" >
+                    Vinicio Chaves
+                </option>
+                <option value="ericqueirozc" >
+                    Eric Queiroz
+                </option>
+                <option value="torvalds" >
+                    Linus Torvalds
+                </option>
+                <option value="filipedeschamps" >
+                    Filipe Deschamps
+                </option>
+                <option value="fabiohora" >
+                    Fabio Hora
+                </option>
+                <option value="nynonet" >
+                    Andeson de Jesus
+                </option>
+                <option value="rafaballerini" >
+                    Rafaella Ballerini
+                </option>
             </datalist>
         </div>
     );
