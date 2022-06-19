@@ -26,10 +26,10 @@ function Outsourced(props) {
                 <img src={`https://activity-graph.herokuapp.com/graph?username=${props.stats.login}&bg_color=20232A&color=60D9FA&line=60D9FA&point=f2f2f2&hide_border=true`}
                     title="Contruibution Graph"
                     alt="Contruibution Graph" />
-                <img
+                {/* <img
                     src={`https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${props.stats.login}&theme=github_dark&hide_border=true`}
                     title="Contribution in the last year"
-                    alt="Contribution in the last year" />
+                    alt="Contribution in the last year" /> */}
             </div>
 
             <div className="hr"></div>
@@ -41,7 +41,7 @@ function Outsourced(props) {
             </div>
 
             <div className="imageW">
-                <img src={`https://github-profile-trophy.vercel.app/?username=${props.stats.login}&theme=react&margin-w=5&margin-h=5`}
+                <img src={`https://github-profile-trophy.vercel.app/?username=${props.stats.login}&theme=discord&no-frame=true&no-bg=true&margin-w=4`}
                     title="awards won by the user"
                     alt="awards won by the user" />
             </div>
