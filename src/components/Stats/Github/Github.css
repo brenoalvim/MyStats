@@ -81,10 +81,12 @@
     .title span {
         font-size: 20px;
     }
+
     .Github {
         width: 375px;
     }
-    .tablePublicInfo .row .rowInfo span{
+
+    .tablePublicInfo .row .rowInfo span {
         font-size: 20px;
     }
 }
